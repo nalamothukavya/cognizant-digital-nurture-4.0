@@ -1,0 +1,116 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body background and font */
+body {
+  background: url('images/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-color: #f4f4f4; /* fallback */
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Navigation styling */
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  display: inline-block;
+}
+nav a:hover {
+  background-color: #eee;
+  color: #000;
+}
+
+/* Header styles */
+#welcomeBanner {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+}
+
+/* Highlight class */
+.highlight {
+  font-weight: bold;
+  background: yellow;
+}
+
+/* Section headers with gradient */
+h2 {
+  background: linear-gradient(to right, #0066ff, #33ccff);
+  color: white;
+  padding: 10px;
+}
+
+/* Event image gallery */
+.gallery-img {
+  border: 2px solid #ccc;
+  width: 100px;
+  height: auto;
+}
+
+/* Link styling */
+a:link { color: blue; }
+a:visited { color: purple; }
+a:hover { color: red; }
+a:active { color: green; }
+
+/* Form and button styling */
+form input, form textarea, form select {
+  display: block;
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 90%;
+}
+input:focus, textarea:focus {
+  outline: 2px solid #007BFF;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Event Card styling */
+.eventCard {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 15px 0;
+  background: #fff;
+}
+
+/* Multi-column section */
+.news {
+  column-count: 2;
+  column-gap: 30px;
+  column-rule: 1px solid gray;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+  .gallery-img {
+    width: 100%;
+  }
+  body {
+    font-size: 14px;
+  }
+}
